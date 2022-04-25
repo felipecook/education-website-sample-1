@@ -1,0 +1,7 @@
+/* The star selector grabs all elements on the page, all browsers have default settings and this will set everything to 0*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}

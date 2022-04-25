@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Multipage Using Responsive HTML, CSS and JS</title>
+
+  <!--iconscout CDN-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <nav>
+    <!-- This uses the BEM structure for class creation-->
+    <div class="container nav_container">
+      <!-- This sets up the logo at the top of the page with a link to the main page when pressed-->
+      <a href="index.html"><h4>Our Logo</h4></a>
+      <!--Set up the list of nav elements that directs to the other pages-->
+      <ul class="nav__items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!--These are meant to show on mobile displays, need to learn what a CDN is and what the html 'i' tag is? -->
+      <button id="open-menu-button"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-button"><i class="uil uil-multiply"></i></button>
+    </div>
+  </nav>
+</body>
+</html>
