@@ -103,6 +103,7 @@ img {
   transition: var(--transition);
 }
 
+/* when mouse hovers over it will change elements this class*/ 
 .btn:hover {
   background: transparent;
   color: var(--color-white);
@@ -114,3 +115,16 @@ img {
   color: var(--color-white);
 }
 
+/* =================================NAVBAR STYLING======================== */
+nav {
+  background: red;
+
+  /* This makes it so that no matter the device viewing, it will always take up 100% of the view width */
+  width: 100vw;
+
+  /* 1rem = 16px, so 5rem = 80px*/
+  height: 5rem;
+
+  /* fixed positions will always stay on screen even as user scrolls down the page */ 
+  position: fixed;
+}
