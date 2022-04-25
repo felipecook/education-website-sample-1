@@ -117,7 +117,6 @@ img {
 
 /* =================================NAVBAR STYLING======================== */
 nav {
-  background: red;
 
   /* This makes it so that no matter the device viewing, it will always take up 100% of the view width */
   width: 100vw;
