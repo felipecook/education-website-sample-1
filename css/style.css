@@ -169,3 +169,43 @@ nav button {
   color: var(--color-bg2);
 }
 
+
+
+/* =================================HEADER STYLING======================== */
+header {
+
+  /* the element will always have the position according to the defined values of its position*/
+  position: relative;
+
+  /* Set to 5rem because the navbar has a height of 5rem, this will set this directly underneath*/
+  top: 5rem;
+
+
+  /*prevent unwanted horizontal scrolling and extra whitespace in your project when elements exist outside the viewport. */
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+
+}
+
+.header__container {
+
+  /* sets display to grid */ 
+  display: grid;
+
+  /* divides the grid into two equal columns, 1 fraction and 1 fraction, 50/50 */ 
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  /* sets to 100% of parent container */ 
+  height: 100%;
+
+  gap: 5rem;
+
+
+}
+
+.header__left p {
+  /* Sets top margin to 1rem, sides to 0 and bottom to 2.4rem*/
+  margin: 1rem 0 2.4rem;
+}
