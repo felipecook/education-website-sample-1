@@ -256,6 +256,38 @@ header {
   transition: var(--transition);
 }
 
+/* uses a selector to grab the 2nd child element and second class identifier selects the icon element in that element*/
+.category:nth-child(2) .category__icon{
+  background: var(--color-danger);
+}
+
+.category:nth-child(3) .category__icon{
+  background: var(--color-success);
+}
+
+.category:nth-child(4) .category__icon{
+  background: var(--color-warning);
+}
+
+.category:nth-child(5) .category__icon{
+  background: var(--color-success);
+}
+
+
 .category:hover {
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
+
+/* sets a border around the icon */
+.category__icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+
+/* target the heading to give it some margin*/
+.category h5 {
+  margin: 2rem 0 1rem;
+}
+
