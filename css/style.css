@@ -127,4 +127,45 @@ nav {
 
   /* fixed positions will always stay on screen even as user scrolls down the page */ 
   position: fixed;
+
+  /* sets this element always at the top of the page*/ 
+  top: 0;
+
+  /* Sets the element above (z axis) any other elements*/
+  z-index: 11;
 }
+
+.nav__container {
+  /* sets the height to 5rems because nav element was set to 5rem */ 
+  height: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+/* Hides the buttons in regular view mode, only want to display them on mobile.*/
+nav button {
+  display: none;
+}
+
+.nav__menu {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.nav__menu a {
+  font-size: 0.9rem;
+
+  /* This creates a smoother transition when the links are hovered over. */
+  transition: var(--transition);
+
+}
+
+.nav__menu a:hover {
+  color: var(--color-bg2);
+}
+
