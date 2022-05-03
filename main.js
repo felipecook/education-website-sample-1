@@ -34,15 +34,17 @@ const closeButton = document.querySelector("#close-menu-button");
 const openButton = document.querySelector("#open-menu-button");
 
 openButton.addEventListener('click', () => {
-  menu.style.display = 'block';
-  closeButton.style.display = 'block';
+  menu.style.display = 'flex';
+  closeButton.style.display = 'inline-block';
   openButton.style.display = 'none';
 });
 
-closeButton.addEventListener('click', () => {
-  openButton.style.display = 'block';
+const closeNav = () => {
+  openButton.style.display = 'inline-block';
   closeButton.style.display = 'none';
   menu.style.display = 'none';
-})
+}
+
+closeButton.addEventListener('click', closeNav);
 
 
