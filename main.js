@@ -26,12 +26,23 @@ faqs.forEach(faq => {
 })
 
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+//show/hide nav menu
+const menu = document.querySelector(".nav__menu");
+
+const closeButton = document.querySelector("#close-menu-button");
+
+const openButton = document.querySelector("#open-menu-button");
+
+openButton.addEventListener('click', () => {
+  menu.style.display = 'block';
+  closeButton.style.display = 'block';
+  openButton.style.display = 'none';
 });
+
+closeButton.addEventListener('click', () => {
+  openButton.style.display = 'block';
+  closeButton.style.display = 'none';
+  menu.style.display = 'none';
+})
+
 
