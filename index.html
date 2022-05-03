@@ -17,6 +17,11 @@
     rel="stylesheet">
 
 
+  <!-- SWIPER JS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -305,10 +310,10 @@
   <!-- ========================= END OF FAQS SECtION ==================== -->
 
 
-  <section class="container testimonials__container">
+  <section class="container testimonials__container mySwiper">
     <h2>Student Testimonials</h2>
-    <div>
-      <article class="testimonial">
+    <div class="swiper-wrapper">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./images/avatar1.jpg" alt="">
 
@@ -324,10 +329,8 @@
         </div>
 
       </article>
-    </div>
 
-    <div>
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./images/avatar2.jpg" alt="">
 
@@ -343,10 +346,8 @@
         </div>
 
       </article>
-    </div>
 
-    <div>
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./images/avatar3.jpg" alt="">
 
@@ -362,11 +363,8 @@
         </div>
 
       </article>
-    </div>
 
-
-    <div>
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./images/avatar4.jpg" alt="">
 
@@ -382,10 +380,8 @@
         </div>
 
       </article>
-    </div>
 
-    <div>
-      <article class="testimonial">
+      <article class="testimonial swiper-slide">
         <div class="avatar">
           <img src="./images/avatar5.jpg" alt="">
 
@@ -404,7 +400,19 @@
     </div>
   </section>
 
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 
 
 
